@@ -1,9 +1,14 @@
 language: java
-
 jdk:
-  - oraclejdk11
-  
+  - oraclejdk8
 script: mvn clean install
+
+#language: java
+
+#jdk:
+#  - oraclejdk11
+  
+#script: mvn clean install
 
 #script:
 #  - ant test
