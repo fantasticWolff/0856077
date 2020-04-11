@@ -8,9 +8,9 @@ jdk:
   - oraclejdk11
   
 #script: mvn clean install
-script:
-  - javac PriorityQueueTest.java
-  - java PriorityQueueTest
+#script:
+#  - javac PriorityQueueTest.java
+#  - java PriorityQueueTest
 #  - ant test
 
 #jobs:
