@@ -1,6 +1,11 @@
 language: java
-#java:
-#  - "1.8.0"
+
+os:
+- windows
+
+#jdk:
+#- oraclejdk11
+
 before_install:
   - echo "before_install"
 
@@ -11,7 +16,6 @@ before_script:
   - echo "before_script"
 
 script:
-  - ./PriorityQueueTest.java 
   #- echo "script"
 
 jobs:
