@@ -10,3 +10,9 @@ script:
   - javac PriorityQueueTest.java
   - java PriorityQueueTest
 #  - ant test
+
+#jobs:
+#  include:
+#    - stage: Custom Testing
+#      #name: Pass
+#      name: Fail
