@@ -1,7 +1,7 @@
 language: java
 jdk:
   - oraclejdk8
-script: mvn clean install
+#script: mvn clean install
 
 #language: java
 
@@ -10,7 +10,7 @@ script: mvn clean install
   
 #script: mvn clean install
 
-#script:
+script:
 #  - ant test
-#  - javac PriorityQueueTest.java
-#  java PriorityQueueTest.java
+  - javac PriorityQueueTest.java
+  - java PriorityQueueTest
