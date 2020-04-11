@@ -1,8 +1,18 @@
 language: java
-os:
-- windows
-jdk:
-- oraclejdk11
+#java:
+#  - "1.8.0"
+before_install:
+  - echo "before_install"
+
+install:
+  - echo "install"
+  - 
+before_script:
+  - echo "before_script"
+
+script:
+  - ./PriorityQueueTest.java 
+  #- echo "script"
 
 jobs:
   include:
