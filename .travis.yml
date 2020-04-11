@@ -1,7 +1,7 @@
 language: java
 
-os:
-- windows
+#os:
+#- windows
 
 #jdk:
 #- oraclejdk11
@@ -16,10 +16,10 @@ before_script:
   - echo "before_script"
 
 script:
-  #- echo "script"
+  - echo "script"
 
 jobs:
   include:
     - stage: Custom Testing
-#      name: Pass
-      name: Fail
+      name: Pass
+      #name: Fail
