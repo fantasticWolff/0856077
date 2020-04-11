@@ -1,4 +1,9 @@
 language: java
 
 jdk:
-- oraclejdk11
+  - oraclejdk11
+
+#script:
+#  - ant test
+#  - javac PriorityQueueTest.java
+#  java PriorityQueueTest.java
