@@ -1,4 +1,4 @@
-dist: trusty
+#dist: trusty
 
 language: java
 
@@ -10,7 +10,7 @@ jdk:
 #script: mvn clean install
 script:
   - javac PriorityQueueTest.java
-#  - java PriorityQueueTest
+  - java PriorityQueueTest
 #  - ant test
 
 #jobs:
