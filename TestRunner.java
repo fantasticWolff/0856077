@@ -1,5 +1,5 @@
 import Lab4.PriorityQueueTest;
-/*
+
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collection;
@@ -13,7 +13,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 import static org.junit.Assert.assertEquals;
-*/
+
 public class TestRunner {
     public static void main(String args[]) {
         //Fail
