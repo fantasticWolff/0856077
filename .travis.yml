@@ -7,6 +7,20 @@ language: java
 jdk:
   - oraclejdk11
 
+#script: mvn clean install
+script:
+ - javac -d . -classpath .:junit-4.12.jar PriorityQueueTest.java TestRunner.java
+ #- javac -d . -classpath junit-4.12.jar PriorityQueueTest.java
+ #- javac PriorityQueueTest.java
+ - java -cp .:junit-4.12.jar TestRunner
+
+
+
+
+
+# ---
+
+
 #addons:
 #  apt:
 #    packages:
@@ -20,21 +34,6 @@ jdk:
 #  - sudo apt-get install junit4
 #  - sudo apt-get install junit5
 
-#script: mvn clean install
-script:
- - javac -d . -classpath .:junit-4.12.jar PriorityQueueTest.java TestRunner.java
- #- javac -d . -classpath junit-4.12.jar PriorityQueueTest.java
- #- javac PriorityQueueTest.java
- #- ls
- #- cd Lab4
- #- ls
- #- cd ..
- #- java Lab4.PriorityQueueTest
- #- javac -d . -cp junit-4.12.jar:Lab4.PriorityQueueTest.class TestRunner.java
- #- javac TestRunner.java
- #- ls
- - java -cp .:junit-4.12.jar TestRunner
- #- ls
 # - javac -classpath junit-4.12.jar PriorityQueueTest.java TestRunner.java
 # - java PriorityQueueTest.class
 # - java -jar junit-4.12.jar
@@ -43,8 +42,7 @@ script:
 # javac -cp ".;first.jar;second.jar;third.jar" MyJavaFile.java
 
 # javac -cp ".:./jars/common.jar" helloworld.java # For Windows, ":" should be replaced with ";".
-  #- javac -cp junit-4.12.jar PriorityQueueTest.java
-  
+#- javac -cp junit-4.12.jar PriorityQueueTest.java
 #  - ant test
 
 #jobs:
