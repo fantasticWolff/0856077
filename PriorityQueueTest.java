@@ -40,7 +40,7 @@ public class PriorityQueueTest {
     public void sum(){
         pq.addAll(Arrays.asList(input));
         for(int i=0; i<input.length; i++){
-            assertEquals(pq.poll(), expect[i]);
+            assertEquals(pq.poll(), expect[i]+1);
         }
     }
 
