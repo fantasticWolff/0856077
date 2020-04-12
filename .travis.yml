@@ -33,7 +33,7 @@ script:
  #- javac -d . -cp junit-4.12.jar:Lab4.PriorityQueueTest.class TestRunner.java
  #- javac TestRunner.java
  #- ls
- - java -cp .:junit-4.12.jar TestRunner
+ - java TestRunner
  #- ls
 # - javac -classpath junit-4.12.jar PriorityQueueTest.java TestRunner.java
 # - java PriorityQueueTest.class
