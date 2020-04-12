@@ -1,5 +1,5 @@
 package Lab4;
-import One.PriorityQueueTest;
+import Lab4.PriorityQueueTest;
 
 public class TestRunner {
     public static void main(String args[]) {
