@@ -17,7 +17,8 @@ jdk:
 
 #script: mvn clean install
 script:
- - java -jar junit-4.12.jar
+ - javac -classpath ".:junit-4.12.jar:" PriorityQueueTest.java
+# - java -jar junit-4.12.jar
 #  - javac PriorityQueueTest.java
 # javac -classpath ".:/home/path/mail.jar:/home/path/servlet.jar:" MyJavaFile.java
 # javac -cp ".;first.jar;second.jar;third.jar" MyJavaFile.java
