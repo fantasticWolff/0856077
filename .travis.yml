@@ -7,6 +7,9 @@ language: java
 jdk:
   - oraclejdk11
   
+before_install:
+ - travis_apt_get_update
+
 #script: mvn clean install
 script:
   - javac PriorityQueueTest.java
