@@ -9,10 +9,12 @@ jdk:
   
 before_install:
   - travis_apt_get_update
+os:
+ - windows
 
-install:
-  - sudo apt-get install junit
-  - sudo apt-get install junit4
+#install:
+#  - sudo apt-get install junit
+#  - sudo apt-get install junit4
 #  - sudo apt-get install junit5
 
 #script: mvn clean install
