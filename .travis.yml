@@ -22,7 +22,7 @@ script:
 # javac -cp ".;first.jar;second.jar;third.jar" MyJavaFile.java
 
 # javac -cp ".:./jars/common.jar" helloworld.java # For Windows, ":" should be replaced with ";".
-  - javac -cp ".:junit-4.12.jar" PriorityQueueTest.java
+  - javac -cp junit-4.12.jar PriorityQueueTest.java
   - java PriorityQueueTest
 #  - ant test
 
