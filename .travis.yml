@@ -20,6 +20,7 @@ script:
  - javac -d . -classpath junit-4.12.jar PriorityQueueTest.java
  - ls
  - javac TestRunner.java
+ - cd Lab4
  - java TestRunner
 # - javac -classpath junit-4.12.jar PriorityQueueTest.java TestRunner.java
 # - java PriorityQueueTest.class
