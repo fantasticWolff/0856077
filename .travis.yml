@@ -19,7 +19,7 @@ jdk:
 script:
  #- javac -d . -classpath junit-4.12.jar PriorityQueueTest.java
  - ls
- - javac -d . -classpath junit-4.12.jar TestRunner.java
+ - javac -d . -cp junit-4.12.jar TestRunner.java
  - ls
  - java TestRunner
  - ls
