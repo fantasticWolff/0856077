@@ -4,16 +4,13 @@ jdk:
   - oraclejdk11
 
 script:
- #- javac -d . -classpath .:junit-4.12.jar PriorityQueueTest.java TestRunner.java
- #- java -classpath .:junit-4.12.jar TestRunner
- 
-
- - javac -d . -classpath .:junit-4.12.jar PriorityQueueTest.java
- - javac -classpath .:junit-4.12.jar TestRunner.java 
+ - javac -d . -classpath .:junit-4.12.jar PriorityQueueTest.java TestRunner.java
  - java -classpath .:junit-4.12.jar TestRunner
  
- #- javac -d . -classpath junit-4.12.jar PriorityQueueTest.java
- #- javac PriorityQueueTest.java
+
+ #- javac -d . -classpath .:junit-4.12.jar PriorityQueueTest.java
+ #- javac -classpath .:junit-4.12.jar TestRunner.java 
+ #- java -classpath .:junit-4.12.jar TestRunner
 
 
 
