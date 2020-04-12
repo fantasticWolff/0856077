@@ -1,13 +1,8 @@
-#dist: trusty
-
 language: java
 
-#jdk:
-#  - oraclejdk8
 jdk:
   - oraclejdk11
 
-#script: mvn clean install
 script:
  - javac -d . -classpath .:junit-4.12.jar PriorityQueueTest.java TestRunner.java
  #- javac -d . -classpath junit-4.12.jar PriorityQueueTest.java
@@ -19,7 +14,12 @@ script:
 
 
 # ---
+#script: mvn clean install
 
+#dist: trusty
+
+#jdk:
+#  - oraclejdk8
 
 #addons:
 #  apt:
