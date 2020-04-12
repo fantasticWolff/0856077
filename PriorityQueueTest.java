@@ -12,17 +12,18 @@ import org.junit.runners.Parameterized.Parameters;
 
 import static org.junit.Assert.assertEquals;
 
+public static void main(String args[]) {
+    @RunWith(Parameterized.class)
+    public class PriorityQueueTest {
+        PriorityQueue pq = new PriorityQueue<>();
 
-@RunWith(Parameterized.class)
-public class PriorityQueueTest {
-    PriorityQueue pq = new PriorityQueue<>();
-    Integer[] input;
-    Integer[] expect;
-    public PriorityQueueTest(Integer[] input, Integer[] expect){
-        this.input = input;
-        this.expect = expect;
-    }
-    public static void main(String [] args) {
+        Integer[] input;
+        Integer[] expect;
+        public PriorityQueueTest(Integer[] input, Integer[] expect){
+            this.input = input;
+            this.expect = expect;
+        }
+
         @Parameters
         public static Collection compare(){
             return Arrays.asList(new Integer[][][]
@@ -39,7 +40,7 @@ public class PriorityQueueTest {
         public void sum(){
             pq.addAll(Arrays.asList(input));
             for(int i=0; i<input.length; i++){
-                assertEquals(pq.poll(), expect[i]+1);
+                assertEquals(pq.poll(), expect[i]);
             }
         }
 
