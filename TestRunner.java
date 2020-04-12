@@ -1,4 +1,3 @@
-package Lab4;
 import Lab4.PriorityQueueTest;
 
 public class TestRunner {
