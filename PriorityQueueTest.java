@@ -15,8 +15,6 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class PriorityQueueTest {
-    public static void main(String args[]) {
-    }
     PriorityQueue pq = new PriorityQueue<>();
 
     Integer[] input;
@@ -29,13 +27,13 @@ public class PriorityQueueTest {
     @Parameters
     public static Collection compare(){
         return Arrays.asList(new Integer[][][]
-        {
-            { {3, 1, 2}, {1, 2, 3} },
-            { {1, 1, 2}, {1, 1, 2} },
-            { {3, 0, 2}, {0, 2, 3} },
-            { {11, 1, 2}, {1, 2, 11} },
-            { {3, -1, 2}, {-1, 2, 3} }
-        });
+                {
+                        { {3, 1, 2}, {1, 2, 3} },
+                        { {1, 1, 2}, {1, 1, 2} },
+                        { {3, 0, 2}, {0, 2, 3} },
+                        { {11, 1, 2}, {1, 2, 11} },
+                        { {3, -1, 2}, {-1, 2, 3} }
+                });
     }
 
     @Test
