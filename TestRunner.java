@@ -1,3 +1,5 @@
+import Lab4.PriorityQueueTest;
+
 public class TestRunner {
     public static void main(String args[]) {
         //Fail
