@@ -23,8 +23,8 @@ script:
  - ls
  - cd ..
  - java Lab4.PriorityQueueTest
- #- javac -d . -cp junit-4.12.jar TestRunner.java
- - javac TestRunner.java
+ - javac -d . -cp junit-4.12.jar:Lab4.PriorityQueueTest.class TestRunner.java
+ #- javac TestRunner.java
  - ls
  - java TestRunner
  - ls
