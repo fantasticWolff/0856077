@@ -11,7 +11,7 @@ before_install:
   - travis_apt_get_update
 
 install:
-  - junit
+  - sudo apt-get install junit
 
 #script: mvn clean install
 script:
