@@ -1,4 +1,4 @@
-package One;
+package Lab4;
 import One.PriorityQueueTest;
 
 public class TestRunner {
