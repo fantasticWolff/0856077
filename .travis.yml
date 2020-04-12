@@ -12,7 +12,7 @@ before_install:
 
 install:
   - sudo apt-get install junit
-    sudo apt-get install junit4
+  - sudo apt-get install junit4
 #  - sudo apt-get install junit5
 
 #script: mvn clean install
