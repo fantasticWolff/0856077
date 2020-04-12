@@ -7,12 +7,12 @@ language: java
 jdk:
   - oraclejdk11
   
-before_install:
-  - travis_apt_get_update
+#before_install:
+#  - travis_apt_get_update
 
-install:
-  - sudo apt-get install junit
-  - sudo apt-get install junit4
+#install:
+#  - sudo apt-get install junit
+#  - sudo apt-get install junit4
 #  - sudo apt-get install junit5
 
 #script: mvn clean install
