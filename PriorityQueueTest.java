@@ -15,6 +15,8 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class PriorityQueueTest {
+    public static void main(String args[]) {
+    }
     PriorityQueue pq = new PriorityQueue<>();
 
     Integer[] input;
