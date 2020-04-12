@@ -17,7 +17,7 @@ jdk:
 
 #script: mvn clean install
 script:
- - javac -classpath junit-4.12.jar PriorityQueueTest.java
+ - javac -d . -classpath junit-4.12.jar PriorityQueueTest.java
  - ls
  - javac TestRunner.java
  - java TestRunner
