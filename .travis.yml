@@ -6,12 +6,12 @@ language: java
 #  - oraclejdk8
 jdk:
   - oraclejdk11
-  - travis_apt_get_update
   
-#before_install:
+before_install:
+  - travis_apt_get_update
 
 install:
-  - apt-get install junit
+  - junit
 
 #script: mvn clean install
 script:
