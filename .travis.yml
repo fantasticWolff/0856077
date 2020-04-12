@@ -22,9 +22,9 @@ addons:
 
 #script: mvn clean install
 script:
- #- javac -d . -classpath junit-4.12.jar PriorityQueueTest.java TestRunner.java
+ - javac -d . -classpath junit-4.12.jar PriorityQueueTest.java TestRunner.java
  #- javac -d . -classpath junit-4.12.jar PriorityQueueTest.java
- - javac PriorityQueueTest.java
+ #- javac PriorityQueueTest.java
  #- ls
  #- cd Lab4
  #- ls
@@ -33,7 +33,7 @@ script:
  #- javac -d . -cp junit-4.12.jar:Lab4.PriorityQueueTest.class TestRunner.java
  #- javac TestRunner.java
  #- ls
- #- java -cp junit-4.12.jar TestRunner
+ - java -cp junit-4.12.jar TestRunner
  #- ls
 # - javac -classpath junit-4.12.jar PriorityQueueTest.java TestRunner.java
 # - java PriorityQueueTest.class
