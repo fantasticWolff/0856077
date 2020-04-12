@@ -15,16 +15,14 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class PriorityQueueTest {
-
-        PriorityQueue pq = new PriorityQueue<>();
-
-        Integer[] input;
-        Integer[] expect;
-        public PriorityQueueTest(Integer[] input, Integer[] expect){
-            this.input = input;
-            this.expect = expect;
-        }
-
+    PriorityQueue pq = new PriorityQueue<>();
+    Integer[] input;
+    Integer[] expect;
+    public PriorityQueueTest(Integer[] input, Integer[] expect){
+        this.input = input;
+        this.expect = expect;
+    }
+    public static void main(String [] args) {
         @Parameters
         public static Collection compare(){
             return Arrays.asList(new Integer[][][]
@@ -61,8 +59,5 @@ public class PriorityQueueTest {
         public void e3(){
             pq.addAll(pq);
         }
-}
-
-public static void main(String [] args) {
-    PriorityQueueTest pqt = new PriorityQueueTest<>();
+    }
 }
