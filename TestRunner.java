@@ -1,3 +1,6 @@
+package One;
+import One.PriorityQueueTest;
+
 public class TestRunner {
     public static void main(String args[]) {
         //Fail
